@@ -1,0 +1,23 @@
+version: "3"
+
+tasks:
+  fmt:
+    cmds:
+      - gofmt -w .
+
+  lint:
+    cmds:
+      - go vet ./...
+
+  test:
+    cmds:
+      - go test ./...
+
+  build:
+    cmds:
+      - go build ./cmd/sqlvet
+
+  build:golangci-lint:
+    cmds:
+      - mkdir -p .bin
+      - golangci-lint custom

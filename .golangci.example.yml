@@ -1,0 +1,23 @@
+version: "2"
+
+linters:
+  default: none
+  enable:
+    - sqlvet
+  settings:
+    custom:
+      sqlvet:
+        type: module
+        description: Checks SQL queries embedded in Go source.
+        settings:
+          rules:
+            - SQL001
+            - SQL002
+            - SQL003
+            - SQL004
+            - SQL005
+            - SQL006
+            - SQL007
+            - SQL008
+            - SQL009
+            - SQL010

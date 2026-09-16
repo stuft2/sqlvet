@@ -1,0 +1,7 @@
+version: v2.9.0
+name: custom-golangci-lint
+destination: ./.bin
+plugins:
+  - module: github.com/stuft2/sqlvet
+    import: github.com/stuft2/sqlvet/plugin
+    path: .
